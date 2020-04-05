@@ -19,7 +19,19 @@
     "url": "https://github.com/ekater1na/express-js/issues"
   },
   "homepage": "https://github.com/ekater1na/express-js#readme",
+  "lint-staged": {
+    "*.js": [
+      "npm run lint",
+      "git add"
+    ]
+  },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "eslint": "6.7.2",
+    "eslint-config-prettier": "6.7.0",
+    "eslint-plugin-node": "10.0.0",
+    "eslint-plugin-prettier": "3.1.1",
+    "lint-staged": "9.5.0",
+    "prettier": "1.19.1"
   }
 }
