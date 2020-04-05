@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
   },
   "repository": {
     "type": "git",
@@ -26,12 +27,13 @@
     ]
   },
   "dependencies": {
-    "express": "^4.17.1",
     "eslint": "6.7.2",
     "eslint-config-prettier": "6.7.0",
     "eslint-plugin-node": "10.0.0",
     "eslint-plugin-prettier": "3.1.1",
+    "express": "^4.17.1",
     "lint-staged": "9.5.0",
-    "prettier": "1.19.1"
+    "prettier": "1.19.1",
+    "require-all": "^3.0.0"
   }
 }
