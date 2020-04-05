@@ -7,15 +7,18 @@ const app = express();
 const router = express.Router;
 const port = 3000;
 
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded()({ extended: true }));
 
 try {
   const controllers = inject(`${__dirname}/controllers`);
-  const actions = inject(`${__dirname}/action`);
+  const actions = inject(`${__dirname}/actions`);
   const models = inject(`${__dirname}/models`);
 
-  mongoose.connect('mongodb://localhost:32768/blog', { useNewUrlParser: true });
+  mongoose.connect(
+    'mongodb+srv://user:<user>@cluster0-icack.mongodb.net/test?retryWrites=true&w=majority',
+    { useNewUrlParser: true, useUnifiedTopology: true }
+  );
 
   const db = mongoose.connection;
 
