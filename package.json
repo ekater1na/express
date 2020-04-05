@@ -1,0 +1,25 @@
+{
+  "name": "express-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ekater1na/express-js.git"
+  },
+  "keywords": [
+    "ekater1na"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ekater1na/express-js/issues"
+  },
+  "homepage": "https://github.com/ekater1na/express-js#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
